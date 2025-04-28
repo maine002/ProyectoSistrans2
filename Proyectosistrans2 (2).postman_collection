@@ -1,0 +1,738 @@
+{
+	"info": {
+		"_postman_id": "6ac71333-f758-4425-89dc-342e8d69b84e",
+		"name": "Emile Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41868577"
+	},
+	"item": [
+		{
+			"name": "RF1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nit",
+							"value": "1003",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Clinica sur 1",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "Carrera 55 #12-76",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "3204567888",
+							"type": "text"
+						},
+						{
+							"key": "eps_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/ips/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ips",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Examen Mayores 3 años",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "2025-06-27",
+							"type": "text"
+						},
+						{
+							"key": "hora",
+							"value": "12:30:00",
+							"type": "text"
+						},
+						{
+							"key": "tipo_servicio",
+							"value": "EXAMEN",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/servicios/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servicios",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ips_nit",
+							"value": "1003",
+							"type": "text"
+						},
+						{
+							"key": "servicio_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/ips-servicios/asignar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ips-servicios",
+						"asignar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroRegistro",
+							"value": "M-002",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Dr. Mendez",
+							"type": "text"
+						},
+						{
+							"key": "tipoDocumento",
+							"value": "CC",
+							"type": "text"
+						},
+						{
+							"key": "numeroDocumento",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "especialidad",
+							"value": "Medicina Interna",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/medicos/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicos",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1002",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Tomas Rodríguez",
+							"type": "text"
+						},
+						{
+							"key": "tipoDocumento",
+							"value": "CC",
+							"type": "text"
+						},
+						{
+							"key": "numeroDocumento",
+							"value": "12345678901",
+							"type": "text"
+						},
+						{
+							"key": "fechaNacimiento",
+							"value": "2005-01-10",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "Carrera 7 #100-20",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "3104567890",
+							"type": "text"
+						},
+						{
+							"key": "epsId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/afiliados/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"afiliados",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ordenId",
+							"value": "2002",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "2025-05-01",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "vigente",
+							"type": "text"
+						},
+						{
+							"key": "ordenPreviaId",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "afiliadoId",
+							"value": "1002",
+							"type": "text"
+						},
+						{
+							"key": "medicoId",
+							"value": "M-002",
+							"type": "text"
+						},
+						{
+							"key": "serviciosIds",
+							"value": "[1,3,4,22,21]",
+							"type": "text"
+						},
+						{
+							"key": "realizado",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "hora",
+							"value": "12:30:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/ordenes/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ordenes",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "realizado",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "servicio_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "2025-05-14",
+							"type": "text"
+						},
+						{
+							"key": "hora",
+							"value": "15:00:00",
+							"type": "text"
+						},
+						{
+							"key": "orden_id",
+							"value": "2001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamientos/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamientos",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF8",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "servicioId",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "realizado",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "orden_id",
+							"value": "2002",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamientos/realizado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamientos",
+						"realizado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ordenId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "servicioId",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "2025-05-20",
+							"type": "text"
+						},
+						{
+							"key": "hora",
+							"value": "09:30:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamientos/agendar-transaccional",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamientos",
+						"agendar-transaccional"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllIPS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ips/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ips",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllServicios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/servicios/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servicios",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetServiciosIps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ips-servicios/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ips-servicios",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RFC1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamientos/servicio/disponibilidad?servicio_id=21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamientos",
+						"servicio",
+						"disponibilidad"
+					],
+					"query": [
+						{
+							"key": "servicio_id",
+							"value": "21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RFC2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/servicios/top-servicios?fechaInicio=2025-04-19&fechaFin=2025-05-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servicios",
+						"top-servicios"
+					],
+					"query": [
+						{
+							"key": "fechaInicio",
+							"value": "2025-04-19"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2025-05-10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RFC3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/servicios/indice-uso?fechaInicio=2025-04-19&fechaFin=2025-05-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servicios",
+						"indice-uso"
+					],
+					"query": [
+						{
+							"key": "fechaInicio",
+							"value": "2025-04-19"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2025-05-10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RFC4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agendamientos/utilizacion-afiliado?afiliadoId=1001&fechaInicio=2025-04-19&fechaFin=2025-05-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamientos",
+						"utilizacion-afiliado"
+					],
+					"query": [
+						{
+							"key": "afiliadoId",
+							"value": "1001"
+						},
+						{
+							"key": "fechaInicio",
+							"value": "2025-04-19"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2025-05-10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RFC5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agendamientos/filtros/serializable?idServicio=4&idMedico=M-002&idAfiliado=1002&fechaInicio=2025-04-19&fechaFin=2025-05-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamientos",
+						"filtros",
+						"serializable"
+					],
+					"query": [
+						{
+							"key": "idServicio",
+							"value": "4"
+						},
+						{
+							"key": "idMedico",
+							"value": "M-002"
+						},
+						{
+							"key": "idAfiliado",
+							"value": "1002"
+						},
+						{
+							"key": "fechaInicio",
+							"value": "2025-04-19"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2025-05-10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RFC6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agendamientos/filtros?idServicio=4&idMedico=M-002&idAfiliado=1002&fechaInicio=2025-04-19&fechaFin=2025-05-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamientos",
+						"filtros"
+					],
+					"query": [
+						{
+							"key": "idServicio",
+							"value": "4"
+						},
+						{
+							"key": "idMedico",
+							"value": "M-002"
+						},
+						{
+							"key": "idAfiliado",
+							"value": "1002"
+						},
+						{
+							"key": "fechaInicio",
+							"value": "2025-04-19"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2025-05-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
